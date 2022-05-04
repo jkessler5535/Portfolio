@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Tamil&family=Lalezar&family=Noto+Serif:ital@1&display=swap');
+
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 18px;
+  font-family:'Exo', sans-serif;
+  letter-spacing: 1px;
+}
+body{
+  width:100%;
+}
+.wrapper{
+  width:100%;
+  height:100%;
+  max-width:1460px;
+  background: linear-gradient(45deg,#5f72be,#9921e8,#583F9A);
+  background-size: 600% 100%;
+  position:absolute;
+  animation:animate 5s ease-in-out infinite;
+  animation-direction:alternate;
+}
+.navbar{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top:25px;
+}
+.navbar ul li{
+  display:inline-block;
+  text-align: center;
+  list-style: none;
+  padding-right:50px;
+  font-size:25px;
+}
+.navbar ul li a{
+  text-decoration: none;
+  color:white;
+}
+.initials{
+  display:inline-block;
+  font-size:25px;
+  text-align: center;
+  color:white;
+  font-family:'Anek Tamil', sans-serif;
+  padding-left:100px;
+}
+.intro{
+  position: relative;
+  display: block;
+  max-width:650px;
+  margin-top:240px;
+  margin-left:100px;
+  line-height: 30px;
+  padding:20px;
+}
+.intro-content h1{
+  font-size:50px;
+  color:white;
+  padding-bottom:15px;
+}
+.intro-content p{
+  font-size:20px;
+  color:white;
+  padding-bottom:25px;
+}
+.buttons{
+  display:block;
+}
+.btn{
+  border:none;
+  padding:8px 15px;
+  background-color: transparent;
+  border:1px solid white;
+  border-radius: 10px;
+  margin-right:8px;
+  letter-spacing: 1px;
+}
+.btn a{
+  color:white;
+  text-decoration: none;
+  text-transform: uppercase;
+
+}
+.footer{
+  display:block;
+  position:fixed;
+  width:100%;
+  bottom:0;
+  left:0;
+  right:0;
+  text-align:center;
+  height:60px;
+  border-top: 1px solid rgba(252, 255, 251,0.4);
+  padding:15px 0;
+}
+.footer p{
+  color:white;
+}
+.icon{
+  vertical-align: middle;
+  padding:3px;
+}
+@keyframes animate {
+  0%{
+    background-position:0%;
+  }
+  100%{
+    background-position:100%;
+    }
+  }
+  @media screen and (max-width:480px){
+.wrapper{
+  background:none;
+  animation:none;
+}
+body{
+  background:#573F97;
+
+ }
+ .navbar ul li {
+   padding:15px;
+   margin-left:25px;
+}
+.initials{
+  padding-left:50px;
+}
+.intro{
+  width:100%;
+  max-width: 350px;
+  margin: 150px auto 0;
+}
+.intro-content h1{
+  font-size:45px;
+  padding-bottom:18px;
+}
+.intro-content p{
+  font-size:20px;
+  padding-bottom: 25px;
+ }
+}
